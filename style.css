@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+@font-face {
+    font-family: 'japa';
+    src: url('fonte/Kashima\ Demo.otf') format('opentype');
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/1340950.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#container{
+    width: 1300px;
+    display: flex;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 2px solid #fff;
+    gap: 1px;
+    transition: 1s;
+    overflow: hidden;
+}
+.projetos, #conteudo, #grafk{
+    margin: 2px;
+    border-radius: 40px;
+}
+
+
+/*Projetos*/
+.slides{
+    width: 209px;
+    display: flex;
+    overflow: hidden;
+}
+.slide{
+    position: relative;
+    transition: 1s;
+}
+.slides input{
+    display: none;
+}
+.manual-navegation{
+    position: absolute;
+    width: 245px;
+    margin-top: -23px;
+    margin-left: -14px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 20px;
+}
+.manual-btn:hover{
+    background-color: rgba(0, 255, 255, 0.6);
+}
+.first{
+    margin-left: 2%;
+}
+#radio1:checked ~ .first{
+    margin-left: 2%;
+}
+#radio2:checked ~ .first{
+    margin-left: -96%;
+}
+#radio3:checked ~ .first{
+    margin-left: -199%;
+}
+
+
+.projeto-container{
+    width: 100%;
+    margin-top: 5px;
+}
+.projetos{
+    background-color: rgb(255, 255, 255);
+    border-radius: 90px 40px 40px 40px;
+    height: 500px;
+}
+.txt-proj{
+    display: flex;
+    justify-content: space-between;
+}
+.x-orisontal:hover{
+    transform: rotate(25deg);
+}
+.container-proj h2, h3{
+    font-family: "Oswald", sans-serif;
+}
+.container-proj h2, h3, p {
+    margin: 5px;
+}
+.sobre-projtxt{
+    font-size: 0.7em;
+}
+.txt-proj .fa-x{
+    font-size: 2em;
+    color: rgb(227, 44, 44);
+    cursor: pointer;
+}
+.x-orisontal{
+    transition: 0.3s;
+    position: absolute;
+}
+
+.txt-proj p{
+    margin: 15px;
+}
+.container-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 40px 65px 40px 40px;
+}
+
+
+.container-proj .butom-vermelho{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    justify-content: flex-end;
+}
+.butom-vermelho p {
+    margin-left: 0;
+}
+.butom-vermelho div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+    background-color: brown;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: rotatez(50deg);
+}
+.butom-vermelho div i{
+    color: white;
+}
+.butom-vermelho div:hover{
+    transform: scale(50%);
+    box-shadow: 0px 0px 5px black;
+    transform: rotateY(0deg);
+}
+#git{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+#git div{
+    background-color: rgba(170, 0, 0, 0.165);
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+#git div p{
+    margin: 10px;
+    font-size: 0.7em;
+}
+#config{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    margin-bottom: 0;
+    color: white;
+}
+#config .fa-gear{
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 1s;
+}
+#config .fa-sliders{
+    transition: 1s;
+}
+#config .fa-gear:hover{
+    transform: rotateZ(100deg);
+}
+#config .fa-sliders:hover{
+    transform: scale(120%);
+}
+
+
+/*conteudo principal*/
+#conteudo{
+    background-image: url(imgs/1337284.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 1900px;
+    border-radius: 40px 150px 40px 40px;
+    z-index: 2;
+}
+#container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+#navegar i{
+    cursor: pointer;
+    transition: 0.4s;
+}
+#navegar i:hover {
+    transform: scale(120%);
+    color: aquamarine;
+}
+
+.container-tudo-porti{
+    display: flex;
+    align-items: flex-end;
+    height: 535px;
+}
+#container-txt-porti{
+    background-color: white;
+    border-radius: 50px 120px 50px 50px;
+    margin: 10px;
+}
+#txt-porti{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Peralta", serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 20px 20px -20px 20px;
+}
+#txt-porti p{
+    margin: 0px;
+}
+#container-baixo-port{
+    display: flex;
+}
+#icone-enviar-port div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 213, 237);
+    transform: rotateZ(50deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#icone-enviar-port div:hover{
+    transform: rotateZ(0deg);
+}
+#icone-enviar-port i {
+    font-size: 0.4em;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#icone-enviar-port div:hover i{
+    font-size: 0.6em;
+    transform: translate(10px);
+}
+#container-icones-porti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container-icones-porti i {
+    font-size: 1.3em;
+}
+#container-icones-porti p {
+    font-weight: bolder;
+    font-size: 0.9em;
+    margin-left: 8px;
+}
+.icones-porti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c3c3;
+    border-radius: 30px;
+    margin: 5px;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+}
+.icones-porti #cora-cheio{
+    display: none;
+    color: rgb(0, 155, 203);
+}
+#container-texto01 {
+    display: flex;
+    margin: 20px;
+}
+#container-texto01 p {
+    font-size: 0.7em;
+    color: rgb(3, 189, 189);
+    margin: 0;
+}
+#container-texto01, h1 {
+    font-size: 2em;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+#navegar{
+    display: flex;
+    margin: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    border: 2px solid #6d6d6d;
+    gap: 5px;
+}
+#navegar i {
+    color: white;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+#grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+#grid i {
+    color: white;
+    font-size: 2em;
+}
+#grid:hover{
+    border: 1px solid white;
+}
+
+
+/*Grafico*/
+#grafk{
+    width: 580px;
+    background-color: rgb(255, 255, 255);
+}
+#grafk-tsxto{
+    margin: 20px;
+}
+#grafk-tsxto p{
+    font-family: 'japa', sans-serif;
+    font-size: 4em;
+    margin: 0px;
+    line-height: 57px;
+}
+
+#container-likes{
+    display: flex;
+    margin: 20px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+#texto-like-numero{
+    font-size: 1.4em;
+    margin: 0;
+    color: rgb(0, 155, 203);
+}
+#texto-like-project{
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    font-size: 0.9em;
+}
+#container-likes-contato{
+    display: flex;
+    width: 110px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    gap: 9px;
+}
+#container-likes-contato p i{
+    color: white;
+    font-size: 1.7em;
+}
+#container-likes-contato p{
+    color: white;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    
+}
+
+
+/*Circulo*/
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 5px;
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            border: 2px solid #6d6d6d;
+        }
+        .box-circle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box-circle svg{
+            width: 110px;
+            height: 110px;
+            margin: 10px;
+        }
+        circle{
+            width: 100px;
+            height: 100px;
+            fill: none;
+            stroke: black;
+            stroke-width: 10;
+            transform: translate(5px, 5px);
+            stroke-dasharray: 320;
+            stroke-dashoffset: 320;
+        }
+        circle:nth-child(1){
+            stroke-dashoffset: 0;
+            stroke: rgb(98, 98, 98);
+        }
+        circle:nth-child(2){
+            transition: stroke-dashoffset 0.8s;
+            stroke-dashoffset: calc(320 - 214);
+            stroke: rgb(10, 202, 255);
+        }
+        .number{
+            position: absolute;
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem;
+        }
+
+
+/*Imagem tearea*/
+#container-imagem-tearea{
+    margin: 10px;
+    margin-bottom: -50px;
+}
+
+#imagen-tearea{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url(imgs/1340950.jpeg);
+    width: 100%;
+    height: 180px;
+    border-radius: 40px;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 70% 99%, 61% 91%, 35% 91%, 28% 100%, 0 100%, 0 0);
+}
+#container-imagem-tearea .butom-vermelho{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -40px;
+    z-index: 1000;
+}
+
+#container-tearea-navegacao{
+    margin: 10px;
+}
+#tearea-icones-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#tearea-icones-nav p {
+    position: relative;
+    display: flex;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#tearea-icones-nav p:hover{
+    color: rgb(0, 167, 222);
+}
+#tearea-icones-nav .barra-icones::after{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    border-left: 1px dashed rgb(102, 102, 102);
+    right: -30px;
+}
